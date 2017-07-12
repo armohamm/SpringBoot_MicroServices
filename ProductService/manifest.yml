@@ -1,0 +1,9 @@
+applications:
+- name: ProductService
+  path: target/ProductService-1.0.jar
+  Main-Class: com.tech.cadt.start.ProductService
+  host: productService
+  memory: 512M
+  instances: 1
+  domain: cfapps.io
+  disk_quota: 512M

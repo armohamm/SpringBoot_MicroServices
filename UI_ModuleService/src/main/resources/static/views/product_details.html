@@ -1,0 +1,81 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<form name="productForm">
+	<div ng-init="showProduct()">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<img ng-src="images/{{selectproductcookie.id}}.jpg" width="280" height="220" />
+
+
+			<div>
+				<i><b>{{selectproductcookie.itemName}}</b></i>
+			</div>
+
+			<div>Cost: {{selectproductcookie.cost}}</div>
+			<div>Description: {{selectproductcookie.description}}</div>
+			<div>In Stock: {{selectproductcookie.availableitems}}</div>
+
+           	   <div class="control-label col-sm-2" for="quantity">Quantity:</div>
+			<div class="col-xs-4">
+				<input class="form-control" id="quantity" type="number"
+					min="{{min}}" max="{{selectproductcookie.availableitems}}"
+					ng-model="product.quantity" required>
+			</div>
+
+			<br> <br>
+			<button type="button" class="btn btn-primary" data-ng-click="order(product)"
+				ng-disabled="productForm.$invalid">Order Now</button>
+			<button type="button" class="btn btn-primary"
+				data-ng-click="cancel()">Cancel</button>
+		</div>
+
+		<div class="col-xs-4"></div>
+
+
+
+	</div>
+
+</form>
+
+<!-- <br>
+<br> 
+<br>
+<br>
+<br>
+<br>
+<br>-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+
+
+
+

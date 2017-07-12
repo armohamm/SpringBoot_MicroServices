@@ -1,0 +1,26 @@
+<br>
+<br><br>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+		<div class="col-xs-12" ng-controller="productController" ng-init="getAllProducts()">
+				<div class="col-xs-4" ng-repeat="product in returndata">
+					<div class="col-xs-12"><i><label>{{product.itemName}}</label></i></div>
+					<div>
+						<img ng-src="images/{{product.id}}.jpg" width="250" height="150" />
+					</div>
+					
+							<br>
+					<div class="col-xs-12">
+						<button type="submit" class="btn btn-success col-xs-6"
+							ng-click="buy(product)">View</button>
+					</div>
+					<br> <br> <br>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,97 @@
+<br>
+<div class="container-fluid text-center">
+	<div class="row content">
+		<div class="col-sm-9 text-left"></div>
+		<div class="col-sm-3 sidenav">
+		<h3>Registration</h3>
+			<form name="registrationform">
+				<div class="form-group">
+						<label class="col-sm-2" for="username"> UserName:</label> 
+						<div class="col-xs-12"> <input type="text"
+							class="form-control" data-ng-model="username" name="username"
+							id="username" required>
+					</div>
+				</div>
+				<div class="form-group">
+						<label class="col-sm-2" for="password">Password:</label>
+						<div class="col-xs-12"> <input type="password"
+							class="form-control" data-ng-model="password" name="password"
+							id="password" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					
+						<label class="col-sm-2" for="firstname"> FirstName:</label> 
+						<div class="col-xs-12">
+						<input type="text"
+							class="form-control" data-ng-model="firstname" name="firstname"
+							id="firstname" required>
+					</div>
+				</div>
+				<div class="form-group">
+					
+						<label class="col-sm-2" for="lastname">LastName:</label> 
+						<div class="col-xs-12"><input type="text"
+							class="form-control" data-ng-model="lastname" name="lastname"
+							id="lastname" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					
+						<label class="col-sm-2" for="email">EmailID:</label>
+						<div class="col-xs-12"> <input type="email"
+							class="form-control" data-ng-model="email" name="email"
+							id="email" required />
+					</div>
+				</div>
+
+				<div class="form-group">
+					
+						<label class="col-sm-2" for="phnumber">MobileNo:</label>
+						<div class="col-xs-12"> <input type="text"
+							class="form-control" data-ng-model="phnumber"
+							ng-pattern="/^[0-9]{1,10}$/" data-ng-minlength="10"
+							data-ng-maxlength="10" name="phnumber" id="phnumber" required />
+						<span
+							data-ng-show="myForm1.phnumber.$touched && myForm1.phnumber.$error.minlength">Please
+							enter 10 digit Mobile No</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+						<label class="col-sm-2" for="address">Address:</label> 
+						<div class="col-xs-12"><input type="text"
+							class="form-control" data-ng-model="address" name="address"
+							id="address" required />
+					</div>
+				</div>
+				<div>
+				<br>
+				<br>
+				<br>
+				</div>
+				<div class="row">
+					<div class="control-label">
+						
+						<div class="col-xs-6">
+							<button type="submit" class="btn btn-success"
+								data-ng-click="register()"
+								ng-disabled="registrationform.$invalid">Register</button>
+						</div>
+		
+						<div class="col-xs-6">
+							<a href="#/"><button type="button" class="btn btn-success">Cancel</button></a>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+

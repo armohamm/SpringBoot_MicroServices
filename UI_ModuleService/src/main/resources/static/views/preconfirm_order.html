@@ -1,0 +1,64 @@
+<br>
+<br>
+<br>
+
+
+	<h1>
+		<center>Order Invoice</center>
+	</h1>
+
+	<div class="jumbotron" ng-init="showInvoice()">
+	<!-- <h2> {{loginuser.firstname}}</h2> -->
+			<table align="center" style="width: 500px; height: 50px">
+				<tbody>
+					<tr>
+
+						<td><img ng-src="images/{{product.id}}.jpg" width="150"
+							height="150" /></td>
+						<td>Product Name : <i><b>{{product.itemName}}</b></i> <br>
+							Price : {{product.cost}} <br> Ordered
+							Quantity:{{product.quantity}} <br> Total Amount to be
+							Paid:{{product.quantity *product.cost}} <br> Payment Mode:
+							Pay On Delivery
+
+						</td>
+
+					</tr>
+
+				</tbody>
+			</table>
+
+			<br>
+
+			<table align="center" style="width: 500px; height: 50px">
+				<tbody>
+					<tr>
+						
+						<td></td>
+					    <!--  <td>Customer Name #1 : {{userfname}} <br> Email Id : {{useremail}} <br>
+							Mobile No: {{userphnum}} <br> Address: {{useraddr}} <br>
+						</td>  -->
+						<!--  <td>Customer Name #2 : {{loginuser.firstname}} <br> Email Id : {{loginuser.email}} <br>
+							Mobile No: {{loginuser.phnumber}} <br> Address: {{loginuser.address}} <br>
+						</td>  -->
+						
+					</tr>
+				</tbody>
+			</table>
+		
+		<br> <br>
+		<div class="col-sm-10 text-center">
+			Please Login to Confirm Order:<a href="#login"><span class="glyphicon glyphicon-log-in"></span> Login </a>
+		</div>
+	</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+ <br>
+
+
+

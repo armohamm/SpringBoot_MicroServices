@@ -1,0 +1,112 @@
+<br>
+
+<br>
+<!-- <div class="container">
+
+	<div class="col-xs-11"></div>
+
+	<div class="col-xs-1">
+		<a href="#home"><span class="glyphicon glyphicon-log-out"></span><i>Log
+				Out</i></a>
+	</div>
+
+</div> -->
+<center>
+<!-- 	<h3>Online Store</h3> -->
+	<h4>Product InVoice</h4>
+</center>
+<hr>
+<div ng-init="showOrderedProduct()">
+<div class="container">
+	<div class="container col-xs-4">
+		<div><b> Order Id: {{order.orderid}}</b></div>
+		<div><b> Order Date:</b> {{order.orderDate}}</div>
+		<div><b>Invoice Date:</b> {{order.orderDate}}</div>
+	</div>
+
+	<div class="container col-xs-4">
+		<div><b>Billing Address</b></div>
+		<div>Name:{{userfname}} </div>
+		<div>Address: {{useraddr}}</div>
+		<div>Mobile No:{{userphnum}} </div>
+	</div>
+
+	<div class="container col-xs-4">
+		<div><b>Shipping Address</b></div>
+		<div>Name: {{userfname}}</div>
+		<div>Address: {{order.billingAddress}}</div>
+		<div>Mobile No: {{userphnum}}</div>
+		<div>Payment Mode : {{order.paymentMode}}</div>
+	</div>
+
+
+</div>
+
+
+
+
+<div class="table-responsive">
+	<div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Product</th>
+					<th>Title</th>
+					<th>Qty</th>
+					<th>Price</th>
+					<th>Tax</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{product.itemName}}</td>
+					<td>{{product.itemName}}</td>
+					<td>{{product.quantity}}</td>
+					<td>{{product.cost}}</td>
+					<td>tax</td>
+					<td>{{order.totalamt}}</td>
+				</tr>
+				<hr>
+
+				<tr>
+
+					<td></td>
+					<td><b>Total</b></td>
+
+					<td>{{order.orderQuantity}}</td>
+					<td>{{order.totalamt}}</td>
+					<td>0.00</td>
+					<td>{{order.totalamt}}</td>
+				</tr>
+			</tbody>
+			<hr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><b>Grand Total</b></td>
+			<td>{{order.totalamt}}</td>
+		</table>
+		<hr>
+
+	</div>
+</div>
+
+<br>
+	<div class="col-sm-12 text-center">
+		<button type="submit" class="btn btn-success" data-ng-click="cancel()"
+			ng-disabled="myForm.$invalid">Close</button>
+	</div>
+
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- <br> -->
+
+
+

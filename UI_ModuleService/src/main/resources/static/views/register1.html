@@ -1,0 +1,94 @@
+
+<div class="container-fluid text-center">
+	<div class="row content">
+		<div class="col-sm-9 text-right"></div>
+		<div class="col-sm-3 sidenav">
+			<form name="myForm1">
+				<h2>
+					<center>Registration Form</center>
+				</h2>
+
+				<div class="form-group">
+					<!-- <label class="col-sm-2"> user Name :</label> -->
+					<div class="col-xs-12">
+					<label class="col-sm-2"> user Name   </label><input type="text" id="username" name="username"
+							class="form-control" ng-model="username"
+							placeholder="Enter username" required /> <br>
+					</div>
+				</div>
+
+				<div class="form-group">
+					
+					<div class="col-xs-12">
+					<label class="col-sm-2">Password     </label><input type="text" id="password" name="password"
+							class="form-control" ng-model="password" placeholder="*********"
+							required /> <br>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					
+					<div class="col-xs-12">
+					<label class="col-sm-2">First name   </label> <input type="text" id="firstname" name="firstname"
+							class="form-control" ng-model="firstname"
+							placeholder="Enter First Name" required /> <br>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					
+					<div class="col-xs-12">
+						<label class="col-sm-2">Last name   </label><input type="text" id="lastname" name="lastname"
+							class="form-control" ng-model="lastname"
+							placeholder="Enter Last Name" required /> <br>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					
+					<div class="col-xs-12">
+					<label class="col-sm-2">Email Address </label><input type="email" id="email" name="email" class="form-control"
+							ng-model="email" placeholder="Enter Email" required /> <br>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					
+					<div class="col-xs-12">
+						<label class="col-sm-2">Ph Number   </label><input type="email" id="email" name="email" class="form-control"
+							class="form-control" data-ng-model="phnumber"
+							ng-pattern="/^[0-9]{1,10}$/" data-ng-minlength="10" placeholder="Enter Mobile number"
+							data-ng-maxlength="10" name="phnumber" id="phnumber" required />
+						 <br>
+					</div>
+				</div>
+
+				<div class="form-group">
+					
+					<div class="col-xs-12">
+						<label class="col-sm-2">Address    </label>   <input type="text" id="address" name="address"
+							class="form-control" ng-model="address"
+							placeholder="Enter Address" required /> <br>
+					</div>
+				</div>
+
+				<div class="control-label">
+					<label class="col-sm-12"></label>
+					<div class="col-xs-4">
+						<button type="submit" class="btn btn-success"
+							data-ng-click="register()" ng-disabled="myForm1.$invalid">Register</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+
+
+

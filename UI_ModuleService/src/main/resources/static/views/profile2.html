@@ -1,0 +1,152 @@
+<div ng-controller="loginController" ng-init="profile()">
+	<br>
+	<center>
+		<h1>Customer Profile</h1>
+	</center>
+
+	<br>
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="active"><a data-target="#home"
+			aria-controls="home" role="tab" data-toggle="tab">Personal
+				Details</a></li>
+		<li role="presentation"><a data-target="#order"
+			aria-controls="page1" role="tab" data-toggle="tab">Order Details</a></li>
+		<li role="presentation"><a data-target="#bank"
+			aria-controls="page2" role="tab" data-toggle="tab">Bank Details</a></li>
+
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<!--Home Tab Fields-->
+		<div role="tabpanel" class="tab-pane active" id="home">
+			<center>
+				<h3>Personal Details</h3>
+			</center>
+			<div class="col-xs-5"></div>
+			<div class="col-xs-7">
+				<div>Full name : {{loginuserfname}}</div>
+				<div>phone number : {{phnum}}</div>
+				<div>Email address: {{emailaddr}}</div>
+				<div>preffered Address: {{addr}}</div>
+			</div>
+
+
+
+		</div>
+
+		<!--Page1 Tab Fields-->
+		<div role="tabpanel" class="tab-pane" id="order">
+			<center>
+				<h3>Order Details</h3>
+			</center>
+			<br> <br>
+			<div class="col-xs-1"></div>
+			<div class="table-responsive">
+		
+				<table class="table col-sm-6">
+					<thead>
+						<tr ng-repeat="singleOrder in previousOrders">
+							<th>Ordered Date</th>
+							<th>Order ID</th>
+							<th>Product ID</th>
+							<th>Amount Paid</th>
+							<th>Billing Address</th>
+							<th>Delivery Address</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{{singleOrder.orderDate}}</td>
+							<td>{{singleOrder.orderid}}</td>
+							<td>{{singleOrder.productid}}</td>
+							<td>{{singleOrder.totalamt}}</td>
+							<td>{{singleOrder.billingAddress}}</td>
+							<td>{{singleOrder.deliveryAddr}}</td>
+						</tr>
+					</tbody>
+				</table>
+			
+			</div>
+
+		</div>
+		
+		
+		
+		<!-- <c:if  test="${!empty testCaseslist}"> 
+				<table class="table">
+				<thead>
+				  <tr>
+					<th>Test Code</th>
+					<th>Test Name</th>
+					<th>Is Prep</th>
+					<th>Workflow</th>
+					<th>Run Type</th>
+					<th>Auto Approve?</th>
+				  </tr>
+				</thead>
+				<tbody>
+				<c:forEach items="${testCaseslist}" var="testcase"> 
+				<tr>
+				<td><c:out value="${testcase.testCode}"></c:out> </td>
+				<td><c:out value="${testcase.testName}"></c:out> </td>
+				<td><input type="checkbox"/></td>
+				<td><c:out value="${testcase.workFlow}"></c:out></td>
+				<td><c:out value="${testcase.runType}"></c:out></td>
+				<td><input type="checkbox"/></td>
+				</tr>
+				</c:forEach>
+								
+				</tbody>
+			  </table>	
+		</c:if>
+		 -->
+		
+<!--  /*"username": "testuser",
+	      "paymentMode": "Pay On Delivery",
+	      "billingAddress": "madhapu4",
+	      "deliveryAddr": "madhapu4",
+	      "orderQuantity": 1,
+	      "orderDate": "2016-12-30",
+	      "orderid": 102,
+	      "productid": 4006,
+	      "totalamt": 2000*/ -->
+
+		<!--Page2 Tab Fields-->
+		<div role="tabpanel" class="tab-pane" id="bank">
+			<center>
+				<h3>Bank Details</h3>
+			</center>
+
+			<br> <br>
+			<div class="col-xs-3"></div>
+
+			<div class="col-xs-6 text-center">
+				<div>Bank Details not updated yet</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
